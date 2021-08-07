@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I love Lavender 😄</title>
+  </head>
+
+  <style>
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+      padding: 30Spx;
+      color: white;
+      border: 5px solid;
+      border-radius: 30;
+      max-width: 400px;
+      border-image: linear-gradient(
+          to right,
+          grey 25%,
+          rgb(179, 62, 62) 50%,
+          rgb(99, 44, 44) 75%,
+          rgb(20, 51, 51) 75%
+        )
+        5;
+
+      font-family: Georgia, "Times New Roman", Times, serif;
+      box-sizing: border-box;
+         transition: all 120ms ease-in-out;
+    }
+    h2:hover{
+
+      background-color: #f9ffe6; 
+        color: rgb(37, 91, 240);
+        cursor: default;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 18px;
+      margin: 20px 10px;
+      font-weight: 400;
+      color: white;
+      font-family: monospace;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      background: #8155a5;
+      color: black;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      box-sizing: border-box;
+      border-bottom-color: rgb(66, 37, 37);
+      border-right-color: rgb(255, 255, 255);
+    }
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+    .contaier {
+      display: block;
+      height: 800px;
+      top: 0;
+      left: 0;
+      width: 1057;
+      margin: 0 auto;
+      padding: 0.5em 1em;
+      border-radius: 40px;
+      font-weight: 400;
+
+      background: linear-gradient(
+        130deg,
+        #e4b695,
+        #c76a82 41.07%,
+        #319197 76.05%
+      );
+
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: bottom right, left, right;
+    }
+
+    .alearn {
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      color: #302352;
+      font-size: 19px;
+    }
+    .alearn:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      font-size: 19px;
+      font-family: monospace;
+      color: rgb(49, 40, 29);
+    }
+  </style>
+  <body>
+    <div class="contaier">
+      <h1><em>lavender 💜</em></h1>
+      <br />
+      <h2> <em>💕Everything is Lavender 💕</em></strong></h2>
+      <hr />
+      <br />
+      <img
+        src="https://play-lh.googleusercontent.com/EbRoqZ3OUORCzi3S2izXtUCins72sqxbCBRKHIp2fZT267km2T0pGz_MXwmZyRWxqgZFD4JjG0YzTw=s400-rw"
+        width="200"
+        alt="YUmmy"
+      />
+      <hr />
+      <p>
+        <span>
+          Lavender doesn't always have to smell sweet and floral. There are many
+          different iterations of the scent, possessing the ability to match
+          almost anyone's preference. We offer a wide range of products with
+          lavender secent skin care , cleaning products ,air freshener, candels
+          We offer you eight of our favorite lavender fragrances to soothe your
+          soul.
+
+          <br />
+        </span>
+      </p>
+      <a
+        href="https://www.everydayhealth.com/diet/what-are-possible-benefits-lavender-must-know-facts-about-therapeutic-plant/"
+        class="alearn"
+        target="_blank"
+      >
+        learn more 💜</a
+      >
+
+      <br />
+      <button class="Button-bee">contact us</button>
+      <br />
+      <p class="footer"> <strong>Coded by Zainab </strong></p>
+    </div>
+    <script>
+      function clickhere() {
+        let name = prompt("What is your name ?");
+        let email = prompt("What is your E-mail address?");
+        if (name.length > 0 || email.length > 0) {
+          alert("Thank you" + "😄 " + name + " we will  be in touch by e-mail ");
+        } else alert(" No name  please add your name");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", clickhere);
+    </script>
+  </body>
+</html>
